@@ -15,18 +15,6 @@ function NavBar({ query, handleInputChange }) {
           placeholder="Faça a sua busca"
         />
       </div>
-
-      <div>
-        <a href="#">
-          <FiHeart className="nav-icons" />
-        </a>
-        <a href="">
-          <AiOutlineShoppingCart className="nav-icons" />
-        </a>
-        <a href="">
-          <AiOutlineUserAdd className="nav-icons" />
-        </a>
-      </div>
     </nav>
   );
 }

@@ -15,25 +15,25 @@ function Category({ handleChange }) {
         <Input
           handleChange={handleChange}
           value="sneakers"
-          title="Sneakers"
+          title="Tênis Esporte"
           name="test"
         />
         <Input
           handleChange={handleChange}
           value="flats"
-          title="Flats"
+          title="Sandalhas"
           name="test"
         />
         <Input
           handleChange={handleChange}
           value="sandals"
-          title="Sandals"
+          title="Tênis Casual"
           name="test"
         />
         <Input
           handleChange={handleChange}
           value="heels"
-          title="Heels"
+          title="Saltos"
           name="test"
         />
       </div>
