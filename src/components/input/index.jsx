@@ -1,11 +1,20 @@
-const Input = ({ handleChange, value, title, name, color }) => {
-  return (
-    <label className="sidebar-label-container">
-      <input onChange={handleChange} type="radio" value={value} name={name} />
-      <span className="checkmark" style={{ backgroundColor: color }}></span>
-      {title}
-    </label>
-  );
-};
+import PropTypes from "prop-types";
 
-export default Input;
+import "../../styles/navbar.css";
+export default function Input({ searchTerm, setSearchTerm }) {
+  return (
+    <nav>
+      <input
+        type="text"
+        placeholder="Digite o nome do produto"
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+      />
+    </nav>
+  );
+}
+
+Input.propTypes = {
+  searchTerm: PropTypes.string,
+  setSearchTerm: PropTypes.func,
+};
